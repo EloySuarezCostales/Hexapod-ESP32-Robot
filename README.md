@@ -19,6 +19,10 @@ I would do four files one called how2use were I will explain how to implement it
 
 ## Documentation
 
+- [How to use the robot](docs/how-to-use.md)
+- [Hexapod research notes](docs/hexapod-research-notes.md)
+- [Hardware and build notes](docs/hardware-and-build-notes.md)
+
 ## Current status
 
 ## License
