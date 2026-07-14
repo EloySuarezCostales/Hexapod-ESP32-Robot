@@ -1,11 +1,7 @@
 # Hexapod
 
 ## Description
-This project is an ESP32-based hexapod robot designed to explore stable six-legged locomotion on uneven and challenging terrain. The robot uses two PCA9685 servo drivers to control its leg servos and WS2812B LEDs for visual feedback.
-
-The system supports multiple movement behaviours, including standing up, sitting down, rotating, and experimental walking gaits such as wave gait and ripple gait. The project focuses on developing a modular control architecture that makes it easier to test, tune, and expand different movement patterns.
-
-The long-term goal is to control the robot via Bluetooth and improve its ability to perform reliable and adaptable movements across difficult surfaces.
+This project is an ESP32-based hexapod robot built to move across uneven and challenging terrain. The robot uses two PCA9685 servo drivers to control its leg servos and WS2812B LEDs for visual feedback. It is controlled via Bluetooth, allowing the user to operate the robot wirelessly and execute different movement commands. The system supports multiple movement behaviours, including standing up, sitting down, rotating, and walking using different gait patterns. The project focuses on developing a modular control architecture that makes it easier to test, tune, and expand different movement patterns, improving the robot’s ability to perform reliable and adaptable movements across difficult surfaces.
 
 
 ## Main features
@@ -24,6 +20,16 @@ The long-term goal is to control the robot via Bluetooth and improve its ability
 - Modular code structure for adding new movements and gaits
 - Bluetooth controller support
 
+## Tecnologies Used
+
+- C
+- C++
+- PlataformIO
+- Arduino
+- I2C
+- PWM
+- Fast LED
+  
 ## Documentation
 
 - [How to use the robot](How2use.md)
