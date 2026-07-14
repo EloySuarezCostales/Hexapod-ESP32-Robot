@@ -22,6 +22,6 @@ The aim of this project is to design and build a stable six-legged robot capable
 
 ## Documentation
 
-- [How to use the robot](docs/how-to-use.md)
-- [Hexapod research notes](docs/hexapod-research-notes.md)
-- [Hardware and build notes](docs/hardware-and-build-notes.md)
+- [How to use the robot](docs/How2use.md)
+- [Research](docs/Research.md)
+- [Project Information](docs/ProjectInfo.md)
