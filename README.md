@@ -1,6 +1,8 @@
 # Hexapod
 This project is an ESP32-based hexapod robot controlled with two PCA9685 servo drivers and WS2812B LEDs. The robot supports standing, sitting, spinning, and experimental gait patterns.
 
+I would do four files one called how2use were I will explain how to implement it and how does each commmand function, thr main README where I will expose the idea, the description the object and where I will share links to understand the gaits and see other types, another one with diverse information I have piled abou hexapods in my research project and one with especific information such as voltage current, how I printed the pieces, problems encountered, parts hardware, pin configuration, tech stack needed etc
+
 ## Hardware
 ESP32 Dev Module                                      x1
 PCA9685 16-channel servo drivers                      x2
