@@ -22,6 +22,6 @@ The aim of this project is to design and build a stable six-legged robot capable
 
 ## Documentation
 
-- [How to use the robot](docs/How2use.md)
-- [Research](docs/Research.md)
-- [Project Information](docs/ProjectInfo.md)
+- [How to use the robot](How2use.md)
+- [Research](Research.md)
+- [Project Information](ProjectInfo.md)
