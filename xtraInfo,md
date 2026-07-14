@@ -1,0 +1,60 @@
+# Hardware and Build Notes
+
+## Hardware list
+
+## Power system
+
+## Voltage and current considerations
+
+## Servo drivers
+
+## Pin configuration
+
+## PCA9685 channel mapping
+
+## LED system
+
+## 3D printed parts
+
+## Assembly notes
+
+## Problems encountered
+
+## Fixes and lessons learned
+
+## Tech stack
+
+## Hardware list
+
+- ESP32 Dev Module
+- 2x PCA9685 16-channel servo drivers
+- 18x servo motors
+- WS2812B LED strips
+- 60 LED WS2812B ring
+- External 5V power supply
+- 3D printed hexapod body parts
+
+## Pin configuration
+
+| Component | Pin / Address |
+|---|---|
+| I2C SDA | GPIO 25 |
+| I2C SCL | GPIO 26 |
+| PCA9685 #1 | 0x40 |
+| PCA9685 #2 | 0x41 |
+| Main LED strips | GPIO 27 |
+| LED ring | GPIO 14 |
+
+## Problems encountered
+
+### Servo orientation
+
+Some servos are mounted in mirrored positions, so the same movement requires opposite angle directions depending on the side of the robot.
+
+### Power stability
+
+The servos and LEDs require an external 5V power supply. Powering them directly from the ESP32 is not suitable.
+
+### Gait tuning
+
+The walking gaits require manual tuning of coxa, femur, and tibia angles.
