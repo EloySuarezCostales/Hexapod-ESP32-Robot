@@ -32,6 +32,10 @@ So, this is the final shape the legs will have:
 
 The legs will have each one three servo motors, each one for the coxa, femur and shinbone.
 
+## 4 Degrees of freedom?
+
+When talking 
+
 ## Static vs dynamic gait
 
 ## Wave gait
