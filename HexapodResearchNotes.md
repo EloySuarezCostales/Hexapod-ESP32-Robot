@@ -20,6 +20,13 @@ For this reason, the body architecture has a direct impact on the robot’s move
 
 ![Hexagonal hexapod architecture](hexagonal_hexapod.jpg)
 
+## Legs
+
+The final design decision was whether the legs should have a straight structure or a curved, C-shaped structure. After comparing both options and analysing their advantages and limitations, I decided that the curved design was the most suitable for this project.The main advantage of a straight leg is that the contact point with the ground is clearly defined. This makes the final position of the leg easier to calculate and predict, which simplifies stability analysis and movement control.However, a curved leg offers greater versatility. Its shape is more similar to a biological leg, and it allows the robot to support itself using different parts of the leg depending on the terrain. This makes it more suitable for irregular surfaces, as the contact with the ground is more progressive and less abrupt.
+
+The main drawback of this design is that the support point is harder to predict. As a result, calculating the exact position, stability margin, and effective leg length becomes more complex. Even so, the curved structure is still the better option for this robot, as it improves adaptability to uneven terrain and allows the robot to tolerate small positioning errors and changes in elevation.
+
+
 ## Static vs dynamic gait
 
 ## Wave gait
