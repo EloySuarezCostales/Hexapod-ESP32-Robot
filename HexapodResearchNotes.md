@@ -26,6 +26,7 @@ The final design decision was whether the legs should have a straight structure 
 
 The main drawback of this design is that the support point is harder to predict. As a result, calculating the exact position, stability margin, and effective leg length becomes more complex. Even so, the curved structure is still the better option for this robot, as it improves adaptability to uneven terrain and allows the robot to tolerate small positioning errors and changes in elevation.
 
+![LEG hexapod architecture](CLEG.jpg)
 
 ## Static vs dynamic gait
 
