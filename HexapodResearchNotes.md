@@ -38,6 +38,25 @@ While researching other hexapod projects, I found a design in which each leg had
 
 However, adding one more servo to each leg would increase the total number of servos from 18 to 24. This would significantly increase the robot’s weight, power consumption, mechanical complexity, and overall cost. It would also make the control system more difficult to manage. For this reason, I decided to keep the current three-degree-of-freedom leg design. Although a fourth joint could provide some advantages, the existing configuration already fits the goals of the project well. It offers a good balance between mobility, stability, complexity, and cost, making the extra degree of freedom unnecessary for this version of the robot.
 
+## Gaits
+
+A gait is the sequence in which the robot moves its legs. Different gaits provide different balances between speed, stability, and complexity.
+
+### Wave Gait
+
+The wave gait moves one leg at a time, it first mover all the legs from one side starting from the back and then tghe other side. This makes it one of the most stable gaits because most of the legs remain on the ground. However, it is also the slowest one, it is perfect for very irregular or dificult terrains, also for avoiding, jumping or passing through obstacles.
+
+### Ripple Gait
+
+The ripple gait moves pairs of legs in a coordinated sequence, it means that they are not moving at the same time but practically, there is never a static leg. It is faster than the wave, but it is still slow gait while still keeping good stability.
+
+### Tripod Gait
+
+The tripod gait moves two groups of three legs alternately, is the most common programmed gait. It is the fastest way, but less stable than the wave and ripple gaits because fewer legs remain on the ground during movement, if you decide moving your hexapod with these sequence, you would have to get sure that the ground is flat and simple enough.
+
+https://youtu.be/wScEFaoqwPM?si=5yplI5DwsEK35SKu
+
+
 ## Static vs dynamic gait
 
 ## Wave gait
