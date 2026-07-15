@@ -14,11 +14,11 @@ For this reason, the body architecture has a direct impact on the robot’s move
 
 ### Rectangular / Tank-like Architecture
 
-![Rectangular hexapod architecture](hexapodtank.jpg)
+![Rectangular hexapod architecture](assets/photos/hexapodtank.jpg)
 
 ### Hexagonal Architecture
 
-![Hexagonal hexapod architecture](hexagonal_hexapod.jpg)
+![Hexagonal hexapod architecture](assets/photos/hexagonal_hexapod.jpg)
 
 ## Legs
 
@@ -28,7 +28,7 @@ The main drawback of this design is that the support point is harder to predict.
 
 So, this is the final shape the legs will have:
 
-![LEG hexapod architecture](CLEG.jpg)
+![LEG hexapod architecture](assets/photos/CLEG.jpg)
 
 Each leg has three servo motors, one for the coxa, one for the femur, and one for the tibia.
 
