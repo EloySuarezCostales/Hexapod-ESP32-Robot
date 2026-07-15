@@ -1,4 +1,4 @@
-# Hexapod Research Notes
+# Hexapod Research
 
 ## What is a hexapod?
 A hexapod is a six-legged robot designed to move using coordinated leg patterns called gaits. Because it has six legs, it can keep several points of contact with the ground at the same time, making it more stable on uneven or difficult terrain.
@@ -34,7 +34,9 @@ The legs will have each one three servo motors, each one for the coxa, femur and
 
 ## 4 Degrees of freedom?
 
-When talking 
+While researching other hexapod projects, I found a design in which each leg had four degrees of freedom instead of three. This made me consider whether adding an extra degree of freedom to each leg would be worth it for my own robot. A fourth degree of freedom, acting similarly to an ankle joint, could improve the robot’s contact with the ground, stability, terrain adaptability, and overall leg movement. It would also make the motion more natural and biologically inspired, especially when walking on uneven surfaces.
+
+However, adding one more servo to each leg would increase the total number of servos from 18 to 24. This would significantly increase the robot’s weight, power consumption, mechanical complexity, and overall cost. It would also make the control system more difficult to manage. For this reason, I decided to keep the current three-degree-of-freedom leg design. Although a fourth joint could provide some advantages, the existing configuration already fits the goals of the project well. It offers a good balance between mobility, stability, complexity, and cost, making the extra degree of freedom unnecessary for this version of the robot.
 
 ## Static vs dynamic gait
 
