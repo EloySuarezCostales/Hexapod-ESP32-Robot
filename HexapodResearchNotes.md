@@ -8,8 +8,17 @@ A hexapod is a six-legged robot designed to move using coordinated leg patterns 
 At the beginning of the project, I considered using a four-legged design instead of a hexapod. A quadruped would probably be faster, more agile, and more flexible in terms of movement. However, it would also require more precise balance control, stronger mechanical design, and more complex movement algorithms. For this project, stability and adaptability to uneven terrain are more important than speed. A six-legged robot can keep more contact points with the ground, making it more stable and reliable on difficult surfaces. For that reason, the hexapod structure is a better fit for the goal of this robot.
 
 ## Types of Hexapods
-Next question that appeared to me is which type of hexapod I was going to do, because depending on the bodytype and legs distribution I would have to choose either the tank one or the hexagonal one. 
-As a way of summarize, we would say that the hexagonal architecture has advantages in turning gait  while rectangular has advantages in straight forward gait. It is clear that assuming the same leg design and robot size, the hexagonal model shows better turning ability, higher stability margin and greater stride length in certain conditions.
+Another important design decision was the type of hexapod structure I wanted to build. Depending on the body shape and leg distribution, I had to choose between a rectangular, tank-like architecture and a hexagonal architecture. In general, a rectangular hexapod tends to perform better in straight-line walking, while a hexagonal hexapod usually has advantages in turning movements. Assuming the same leg design and overall robot size, the hexagonal configuration can provide better turning ability, a higher stability margin, and, in some conditions, a greater stride length.
+
+For this reason, the body architecture has a direct impact on the robot’s movement capabilities, stability, and adaptability to different terrains.
+
+### Rectangular / Tank-like Architecture
+
+![Rectangular hexapod architecture](../media/photos/rectangular-hexapod.jpg)
+
+### Hexagonal Architecture
+
+![Hexagonal hexapod architecture](../media/photos/hexagonal-hexapod.jpg)
 
 ## Static vs dynamic gait
 
