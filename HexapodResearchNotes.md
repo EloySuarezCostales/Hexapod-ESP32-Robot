@@ -14,11 +14,11 @@ For this reason, the body architecture has a direct impact on the robot’s move
 
 ### Rectangular / Tank-like Architecture
 
-hexapodtank.jpg)
+hexapodtank.jpg
 
 ### Hexagonal Architecture
 
-hexagonal_hexapod.jpg)
+hexagonal_hexapod.jpg
 
 ## Static vs dynamic gait
 
