@@ -30,7 +30,7 @@ So, this is the final shape the legs will have:
 
 ![LEG hexapod architecture](CLEG.jpg)
 
-The legs will have each one three servo motors, each one for the coxa, femur and shinbone.
+Each leg has three servo motors, one for the coxa, one for the femur, and one for the tibia.
 
 ## 4 Degrees of freedom?
 
