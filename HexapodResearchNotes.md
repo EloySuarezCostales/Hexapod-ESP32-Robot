@@ -40,20 +40,22 @@ However, adding one more servo to each leg would increase the total number of se
 
 ## Gaits
 
-A gait is the sequence in which the robot moves its legs. Different gaits provide different balances between speed, stability, and complexity.
+A gait is the sequence in which a robot moves its legs. In hexapod locomotion, each gait provides a different balance between stability, speed, complexity, and terrain adaptability.
 
 ### Wave Gait
 
-The wave gait moves one leg at a time, it first mover all the legs from one side starting from the back and then tghe other side. This makes it one of the most stable gaits because most of the legs remain on the ground. However, it is also the slowest one, it is perfect for very irregular or dificult terrains, also for avoiding, jumping or passing through obstacles.
+The wave gait moves one leg at a time. In this project, the movement starts from the rear legs of one side and then continues with the legs on the opposite side. Since most of the legs remain in contact with the ground during the movement, this is one of the most stable gaits. However, it is also one of the slowest. For that reason, it is especially useful on irregular or difficult terrain, where stability is more important than speed. It can also be useful when the robot needs to carefully avoid, climb over, or pass through obstacles.
 
 ### Ripple Gait
 
-The ripple gait moves pairs of legs in a coordinated sequence, it means that they are not moving at the same time but practically, there is never a static leg. It is faster than the wave, but it is still slow gait while still keeping good stability.
+The ripple gait moves pairs of legs in a coordinated sequence. Unlike the wave gait, more than one leg can be involved in the movement cycle, which makes it faster. However, the sequence is still designed to keep enough legs on the ground to maintain good stability. This gait provides a balance between the high stability of the wave gait and the higher speed of the tripod gait. It is suitable for situations where the robot needs to move more efficiently while still maintaining reliable ground contact.
 
 ### Tripod Gait
 
-The tripod gait moves two groups of three legs alternately, is the most common programmed gait. It is the fastest way, but less stable than the wave and ripple gaits because fewer legs remain on the ground during movement, if you decide moving your hexapod with these sequence, you would have to get sure that the ground is flat and simple enough.
+The tripod gait moves two groups of three legs alternately and is one of the most common gaits used in hexapod robots. It is usually the fastest gait because half of the legs move while the other half support the body. 
+The main drawback is that it is less stable than the wave and ripple gaits, since fewer legs remain on the ground during each movement phase. For this reason, the tripod gait is better suited to flat and predictable surfaces, where speed is more important than maximum stability.
 
+A useful visual explanation of these gait patterns can be found here:
 https://youtu.be/wScEFaoqwPM?si=5yplI5DwsEK35SKu
 
 
