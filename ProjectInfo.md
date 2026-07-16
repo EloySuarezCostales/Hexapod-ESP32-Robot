@@ -55,11 +55,11 @@ Leg Numbering
 
 The robot uses the following leg numbering convention:
 
-       0
-   5       1
+----0
+5-------1
 
-   4       2
-       3
+4-------2
+----3
 
 This numbering is used throughout the code to identify each leg when executing movements, gaits, calibration tests, and active-leg filtering.
 
