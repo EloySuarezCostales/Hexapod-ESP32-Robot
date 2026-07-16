@@ -100,10 +100,15 @@ The buck converter supplying power to the servos may not be capable of deliverin
 Several measures can be adopted to mitigate this issue:
 
 -Use a buck converter with sufficient current capacity to handle peak current demand rather than only the average load.
+
 -Increase the converter's current limit when supported by the hardware.
+
 -Isolate the logic power supply (ESP32) from the servo power supply while maintaining a common ground reference.
+
 -Install large electrolytic capacitors (typically 1000–4700 µF) close to the servo power rail to absorb transient current peaks.
+
 -Distribute the electrical load across multiple buck converters when powering a large number of servos.
+
 -Use appropriately sized power cables and keep high-current connections as short as possible to minimise voltage losses.
 
 In this project, the issue was successfully resolved by increasing the current limit of the buck converter to accommodate the expected peak current requirements.
