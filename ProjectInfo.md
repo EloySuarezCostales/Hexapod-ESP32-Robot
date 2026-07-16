@@ -56,6 +56,7 @@ Leg Numbering
 The robot uses the following leg numbering convention:
 
 ----0
+
 5-------1
 
 4-------2
