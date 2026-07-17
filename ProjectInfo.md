@@ -141,14 +141,6 @@ To improve communication reliability, the following measures are recommended:
 For this project, the most effective solution was the design of a custom PCB that securely mounted the ESP32 and fixed the signal wiring in place. This significantly reduced cable movement, electrical noise, and intermittent communication failures, resulting in a much more reliable I²C connection.
 
 
-
-## Fixes and lessons learned
-
-## Hardware list
-
-- ESP32 Dev Module
-- 2x PCA9685 16-channel servo drivers
-- 18x servo motors
 - WS2812B LED strips
 - 60 LED WS2812B ring
 - External 5V power supply
