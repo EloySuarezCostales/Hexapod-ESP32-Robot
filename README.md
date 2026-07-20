@@ -3,6 +3,9 @@
 ## Description
 This project is an ESP32-based hexapod robot built to move across uneven and challenging terrain. The robot uses two PCA9685 servo drivers to control its leg servos and WS2812B LEDs for visual feedback. It is controlled via Bluetooth, allowing the user to operate the robot wirelessly and execute different movement commands. The system supports multiple movement behaviours, including standing up, sitting down, rotating, and walking using different gait patterns. The project focuses on developing a modular control architecture that makes it easier to test, tune, and expand different movement patterns, improving the robot’s ability to perform reliable and adaptable movements across difficult surfaces.
 
+## My project
+
+[Watch my hexapod robot movement](https://youtu.be/TU_LINK)
 
 ## Main features
 
