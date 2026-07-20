@@ -36,5 +36,5 @@ This project is an ESP32-based hexapod robot built to move across uneven and cha
 ## Documentation
 
 - [How to use the robot](How2use.md)
-- [Research](Research.md)
+- [Research](HexapodResearch.md)
 - [Project Information](ProjectInfo.md)
