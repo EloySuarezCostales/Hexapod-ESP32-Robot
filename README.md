@@ -38,3 +38,17 @@ This project is an ESP32-based hexapod robot built to move across uneven and cha
 - [How to use the robot](How2use.md)
 - [Research](HexapodResearch.md)
 - [Project Information](ProjectInfo.md)
+
+## Limitations
+
+- The robot does not use inverse kinematics yet.
+- There is no closed-loop feedback from the servos.
+- Walking stability depends on servo calibration, surface conditions, and weight distribution.
+
+  ## Future Improvements
+
+- Add inverse kinematics.
+- Improve Bluetooth controller integration.
+- Tune gait parameters for different terrains.
+- Add sensor feedback for better stability.
+- Improve mechanical robustness and cable management.
