@@ -70,5 +70,3 @@ If you look at the platformio.ini file you would see two environments. The defau
 To choose which servo you would like to move or calibrate in the calibrationServo.cpp file, you would have to modify the pca that is control taht could be pca0(0x40) or pca1(0x41), and then select the servo you want to move by selecting its channel in the 9th line. Everytime you want to change the pca that you are using you would have to check that the new pca is updated in the whole file.
 
 
-
-## Example usage sequence
