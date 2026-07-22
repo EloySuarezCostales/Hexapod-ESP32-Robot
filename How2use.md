@@ -85,45 +85,62 @@ This gait moves two groups of three legs alternately and is designed for faster 
 Makes the 60-LED bottom ring blink three times.
 
 
-## Velocity
+## Movement Timing and Speed
 
-If you want to change the velocity from the different movements, you could determine the time you would like each movement to last.
+The speed of the different movements can be adjusted by modifying the timing parameters used in the code. These values define how long each movement or movement phase takes to complete.
 
-DURATION_MOV: is the time that leg lasts to put it up.
+- `DURACION_MOV`: defines the duration of the general leg movement used in posture transitions.
 
-DURATION_TOTAL_SPIN: is the total time that takes the hexapod to complete a spin of 20 degrees.
+- `DURACION_TOTAL_SPIN`: defines the total time required for the hexapod to complete a spin movement of approximately 20 degrees.
 
-RIPPLE_PAIR_STEP_SECONDS: is the time taken by each pair of legs to move forward in seconds
+- `RIPPLE_PAIR_STEP_SECONDS`: defines the time taken by each pair of legs to move forward during the ripple gait.
 
-TRIPOD_STEP_SECONDS: is the time taken by each tripod of legs to move forward in seconds
+- `TRIPOD_STEP_SECONDS`: defines the time taken by each tripod group to move during the tripod gait.
 
-WAVE_GAIT_SECONDS: is the time taken by each leg to move forward in seconds
+- `WAVE_GAIT_SECONDS`: defines the time taken by each individual leg to move forward during the wave gait.
 
-DANCE_STEP_SECONDS: is the time taken for each of the 6 steps of the dance
+- `DANCE_STEP_SECONDS`: defines the time taken for each transition inside the automatic dance sequence.
 
-DANCE_LEAN_SECONDS: this is the time taken for each movement each time you execute a single leaning movement
+- `DANCE_LEAN_SECONDS`: defines the time taken when executing an individual dance leaning movement.
 
-DANCE_PAUSE_MS: this is the lapse of time between each dance movement
+- `DANCE_PAUSE_MS`: defines the delay between each movement inside the automatic dance sequence.
 
-STATIC_YAW_SECONDS: this is the time taken to do the yaw spin
+- `STATIC_YAW_SECONDS`: defines the time taken to perform a static yaw movement.
 
 
-## Activate legs
+## Active Leg Selection
 
-This is a very useful file created just for the using of a function used in the main.cpp called activeLegsConfiguration. With this function you can select the legsyou want to deactivate in case they are broken or unuseful for any reason or maybe because you want to move just one leg so as to calibrate it. The fucntion is given 6 booleans one for each leg.
+The project includes an active-leg selection system, which is useful for testing, debugging, and calibration. This system allows specific legs to be enabled or disabled from the main program.
 
-activeLegsConfiguration(true, true, true, true, true, true);
-    //                  0      1      2     3      4      5
+This can be helpful if one leg is damaged, incorrectly calibrated, or temporarily not needed during testing. It is also useful when calibrating a single leg independently, since the rest of the legs can be disabled while only the selected leg is allowed to move.
 
-## Calibration mode
+The function receives six Boolean values, one for each leg:
 
-If you look at the platformio.ini file you would see two environments. The default one is the one related with the hexapod and executes every action. The other environment is the one with which you could calibrate your servo. This is the file called calibrationServo.cpp, to use this file you would have to go in the Visual Studio to the icon of Platformio with an icon similar to an alien. Once you are in there go to the calibrationServo project and press Upload and monitor. 
+configurarPatasActivas(true, true, true, true, true, true);
+//                    0     1     2     3     4     5
 
-To choose which servo you would like to move or calibrate in the calibrationServo.cpp file, you would have to modify the pca that is control taht could be pca0(0x40) or pca1(0x41), and then select the servo you want to move by selecting its channel in the 9th line. Everytime you want to change the pca that you are using you would have to check that the new pca is updated in the whole file.
+
+## Calibration Mode
+
+The `platformio.ini` file contains two different environments. The default environment is used to upload and execute the main hexapod control program. The second environment is used for servo calibration and runs the `calibrationServo.cpp` file.
+
+To use the calibration environment, open the project in Visual Studio Code and go to the PlatformIO menu, which is represented by the alien-shaped icon. From there, select the calibration environment and press **Upload and Monitor**.
+
+To choose which servo you want to move or calibrate, open `calibrationServo.cpp`. In this file, you must select the PCA9685 driver that controls the servo, either `pca0(0x40)` or `pca1(0x41)`, and then select the corresponding servo channel.
+
+Every time you change the PCA9685 driver being used, make sure that the selected driver is updated consistently throughout the calibration file.
 
 ## Dance
 
-This is not a necessary movement, but in case you wanna do it, I suggest you to calibrate your own dance instead of copying my own calibration because it would depend on many things, so it will probably be different for every hexapod. The idea of the dance is that the robot leans on every leg doing sort of a wave. We have one command for each single movement and for the dance we execute every single movement within a separation of (DANCE_PAUSE_MS). As you could check in my code this is my final calibration.
+## Dance
+
+The dance movement is not essential for the basic operation of the robot, but it was added as an experimental and visual movement feature. If another hexapod uses this code, the dance movement should be calibrated again, since the correct angles will depend on the servo orientation, mechanical assembly, weight distribution, leg geometry, and individual calibration of each robot.
+
+The idea of the dance is to shift the robot’s body weight from one leg to another, creating a wave-like motion around the body. There is one individual command for each leaning movement, and the automatic dance function executes all of them sequentially with a delay defined by `DANCE_PAUSE_MS`.
+
+For individual leaning commands, the robot must return to the centre before executing any other movement. However, during the automatic dance sequence, the robot moves directly from one leaning posture to the next without returning to the centre between steps. This makes the movement more continuous and dance-like.
+
+The following arrays show the final calibration used in this project:
 
 // ======================================================
 // Calibration area
@@ -264,3 +281,6 @@ static const int TIBIA_TO_LEG_5[6] = {
 static const int DANCE_SEQUENCE[6] = {
   0, 1, 2, 3, 4, 5
 };
+
+
+These values should be understood as a hardware-specific calibration rather than a universal configuration.
