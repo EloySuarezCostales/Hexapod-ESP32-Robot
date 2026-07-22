@@ -48,7 +48,5 @@ This project is an ESP32-based hexapod robot built to move across uneven and cha
   ## Future Improvements
 
 - Add inverse kinematics.
-- Improve Bluetooth controller integration.
-- Tune gait parameters for different terrains.
 - Add sensor feedback for better stability.
 - Improve mechanical robustness and cable management.
