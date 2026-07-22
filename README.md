@@ -6,6 +6,7 @@ This project is an ESP32-based hexapod robot built to move across uneven and cha
 ## My project
 
 [Watch my hexapod robot movement](https://youtube.com/shorts/M2XZRYnYeiA?feature=share)
+[Watch my hexapod robot static movement](https://youtube.com/)
 
 ## Main features
 
