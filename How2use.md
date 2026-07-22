@@ -90,13 +90,21 @@ Makes the 60-LED bottom ring blink three times.
 If you want to change the velocity from the different movements, you could determine the time you would like each movement to last.
 
 DURATION_MOV: is the time that leg lasts to put it up.
+
 DURATION_TOTAL_SPIN: is the total time that takes the hexapod to complete a spin of 20 degrees.
+
 RIPPLE_PAIR_STEP_SECONDS: is the time taken by each pair of legs to move forward in seconds
+
 TRIPOD_STEP_SECONDS: is the time taken by each tripod of legs to move forward in seconds
+
 WAVE_GAIT_SECONDS: is the time taken by each leg to move forward in seconds
+
 DANCE_STEP_SECONDS: is the time taken for each of the 6 steps of the dance
+
 DANCE_LEAN_SECONDS: this is the time taken for each movement each time you execute a single leaning movement
+
 DANCE_PAUSE_MS: this is the lapse of time between each dance movement
+
 STATIC_YAW_SECONDS: this is the time taken to do the yaw spin
 
 
