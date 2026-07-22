@@ -46,7 +46,7 @@ This project is an ESP32-based hexapod robot built to move across uneven and cha
 - There is no closed-loop feedback from the servos.
 - Walking stability depends on servo calibration, surface conditions, and weight distribution.
 
-  ## Future Improvements
+## Future Improvements
 
 - Add inverse kinematics.
 - Add sensor feedback for better stability.
